@@ -1,3 +1,5 @@
 import sqlite3
 
-sqlite3.connect("test.db")
+con = sqlite3.connect("test.db")
+con.execute("CREATE TABLE data (a INT)")
+con.commit()
